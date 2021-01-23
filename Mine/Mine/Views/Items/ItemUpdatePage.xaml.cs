@@ -38,12 +38,11 @@ namespace Mine.Views
             Item = viewModel.Item;
 
             BindingContext = this;
-
         }
 
         async void Save_Clicked(object sender, EventArgs e)
         {
-            MessagingCenter.Send(this, "AddItem", Item);
+            MessagingCenter.Send(this, "UpdateItem", Item);
             await Navigation.PopModalAsync();
         }
 

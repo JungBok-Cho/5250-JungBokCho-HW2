@@ -13,7 +13,10 @@ namespace Mine
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            // DependencyService.Register<MockDataStore>();
+
+            // Make DependencyService go find and use DatabaseService.cs for the Item Index page
+            DependencyService.Register<DatabaseService>();
             MainPage = new MainPage();
         }
 

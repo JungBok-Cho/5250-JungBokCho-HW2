@@ -22,7 +22,7 @@ namespace UnitTests.Models
         }
 
         [Test]
-        public void RollDice_Roll_1_Dice_6_Should_Return_Between_1_And_6()
+        public void RollDice_Valid_Roll_1_Dice_6_Should_Return_Between_1_And_6()
         {
             // Arrange
 
@@ -36,6 +36,7 @@ namespace UnitTests.Models
             Assert.AreEqual(true, result <= 6);
         }
 
+        [Test]
         public void RollDice_Invalid_Roll_Forced_1_Should_Return_1()
         {
             // Arrange
